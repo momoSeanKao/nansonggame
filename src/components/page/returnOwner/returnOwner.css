@@ -1,0 +1,242 @@
+.returnOwner, .bg_mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-size: cover;*/
+}
+
+.bg_mask {
+    background: url("https://app.bowu66.com/museum-cms/upload/nansongGame/returnOwner/background_01.jpg") no-repeat;
+    background-position: 0;
+    background-size: 100% 100%;
+    z-index: 1;
+
+}
+
+/*游戏标题*/
+.game-title > img {
+    width: 100%;
+}
+
+.game-title {
+    position: absolute;
+    z-index: 10;
+    width: 14%;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 4%;
+}
+
+/*背景*/
+.bgpic_box {
+    position: fixed;
+    width: 75%;
+    left: 8%;
+    /*top: 4%;*/
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.bgpic_box > img {
+    width: 100%;
+    height: 100%;
+}
+
+.tip_mask {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    -webkit-animation: fade 600ms infinite;
+    -o-animation: fade 600ms infinite;
+    animation: fade 600ms infinite;
+    position: absolute;
+    z-index: 10;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+/*7个按钮*/
+.gameControll_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.icon_round {
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    border-radius: 50%;
+    /*box-shadow: 2px 1px 3px red;*/
+    background: url("https://app.bowu66.com/museum-cms/upload/nansongGame/returnOwner/bgpicSmallBg.png") no-repeat;
+    background-size: cover;
+}
+
+.iconImg {
+    /*width: 50%;*/
+    /*height: 50%;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.icon1 {
+    top: 5%;
+    right: 18%;
+}
+
+.icon2 {
+    top: 16%;
+    right: 14%;
+}
+
+.icon3 {
+    top: 28%;
+    right: 11%;
+}
+
+.icon4 {
+    top: 41%;
+    right: 13%;
+}
+
+.icon5 {
+    top: 55%;
+    right: 13%;
+}
+
+.icon6 {
+    right: 12%;
+    top: 68%;
+}
+
+.icon7 {
+    right: 14%;
+    top: 81%;
+}
+
+/*其他功能按钮*/
+.other-control {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.changePic_box {
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    /*box-shadow: 2px 1px 3px red;*/
+}
+
+.changePic_box > img {
+    width: 100%;
+}
+
+.prev_pic {
+    right: 3%;
+    bottom: 15%;
+}
+
+.next_pic {
+    right: 3%;
+    bottom: 5%;
+}
+
+/*游戏开始按钮*/
+.game_start_icon, .tip_icon {
+    position: absolute;
+    width: 7rem;
+    z-index: 10;
+    left: 1rem;
+    bottom: 0rem;
+}
+
+/*提示*/
+
+/*音乐*/
+.music_icon {
+    position: absolute;
+    width: 5rem;
+    z-index: 10;
+    right: 1%;
+    top: 16%;
+}
+
+/*提问*/
+.quiz_icon {
+    position: absolute;
+    width: 5rem;
+    z-index: 10;
+    right: 1%;
+    top: 3%;
+}
+
+.game_start_icon > img, .tip_icon > img, .music_icon > img, .quiz_icon > img {
+    width: 100%;
+}
+
+/*游戏规则*/
+.rule-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialogue-pic {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    -webkit-animation: scaleB 300ms 1;
+    -o-animation: scaleB 300ms 1;
+    animation: scaleB 300ms 1;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scaleB {
+    from {
+        transform: scale(0.1);
+    }
+    25% {
+        transform: translate(-12.5%, -12.5%) scale(0.35);
+    }
+    50% {
+        transform: translate(-25%, -25%) scale(0.5);
+    }
+    75% {
+        transform: translate(-37.5%, -37.5%) scale(0.75);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

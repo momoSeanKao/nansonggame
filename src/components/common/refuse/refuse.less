@@ -1,0 +1,69 @@
+.game_rule {
+  z-index: 1000;
+}
+
+.game_pass_box {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7e3a6;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  box-shadow: 0px 0px 13px #ddd;
+  & .game_pass_title {
+    font-size: 16px;
+    padding: 10px;
+    color: #9bce41;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 100%;
+    transform: translate(-50%, -30%);
+  }
+  & .game_start_icon {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.anim-opacity2 {
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+
+.fail-icon-box {
+  width: 6.5rem;
+  margin: 2rem auto 0.1rem auto;
+  & img {
+    width: 100%;
+  }
+}
+
+.fail-click {
+  width: 100%;
+  & span {
+    float: left;
+    text-align: right;
+    width: 50%;
+    padding: 0 0.1rem;
+    & img {
+      width: 2.7rem;
+    }
+  }
+  & .singleButton {
+    width: 100%;
+    text-align: center;
+  }
+}
